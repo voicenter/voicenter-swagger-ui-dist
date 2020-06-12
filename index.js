@@ -8,7 +8,8 @@ const { readdirSync, copyFileSync, existsSync, mkdirSync } = require('fs');
 exports.replaceWithDist = destination => {
   if (!existsSync(destination)) mkdirSync(destination);
 
-  const files = readdirSync(resolve('./dist'));
+  const distPath = resolve(__dirname, 'dist')
+  const files = readdirSync(distPath);
 
-  files.forEach(file => copyFileSync(resolve('./dist', file), `${destination}/${file}`));
+  files.forEach(file => copyFileSync(resolve(distPath, file), `${destination}/${file}`));
 };
