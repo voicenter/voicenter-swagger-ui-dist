@@ -1,8 +1,11 @@
 {
   "name": "voicenter-swagger-ui-dist",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "url": "git@github.com:voicenter/voicenter-swagger-ui-dist.git"
+  },
   "keywords": [],
   "author": "Serhii Mamedov",
   "license": "ISC"
